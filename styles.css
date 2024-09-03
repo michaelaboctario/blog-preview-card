@@ -1,0 +1,99 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Figtree', sans-serif;
+}
+
+body {
+ background-color: hsl(47, 88%, 63%);
+}
+
+#container {
+    width: 384px;
+    height: 565px;
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 8px 8px 0px 0px #000;
+    padding: 1.2rem;
+    margin: 3rem auto;
+  }
+  
+.card__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+.card__image img {
+    border-radius: 10px;
+  }
+  
+.card__content {
+    margin-top: 1.2rem;
+    margin-left: 5px;
+  }
+  
+  .card__text {
+    background-color: #F4D04E;
+    padding: 4px 12px;
+    border-radius: 4px;
+    width: 90px;
+    font-size: 1em;
+    font-weight: 800;
+  }
+  
+  .card__date {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+  }
+  
+  .card__title {
+    font-size: 24px;
+    font-weight: 800;
+    margin-top: .7rem;
+    margin-bottom: 1rem;
+    transition: color .2s ease-in;
+  }
+  
+  .card__title:hover {
+    color: #F4D04E;
+    cursor: pointer;
+  }
+  
+  .card__description {
+    color: #7f7f7f;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+  
+  .avatar__container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .avatar__container h3 {
+    margin-left: 1rem;
+    font-size: 14px;
+    font-weight: 800;
+  }
+  
+  /* 
+  Media Queries
+  */
+  
+  @media screen and (max-width: 500px) {
+    #container {
+      width: 90%;
+      margin: 2rem auto
+    }
+  
+    .card__image img {
+      width: 100%;
+    }
+  }
